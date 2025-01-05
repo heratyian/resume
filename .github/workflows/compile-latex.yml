@@ -8,6 +8,7 @@ on:
 
 jobs:
   build-latex:
+    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -37,3 +38,12 @@ jobs:
       
       - name: list files
         run: ls -l
+
+      - name: Commit compiled PDF
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          force: true
+          directory: .
+          message: "Auto-commit new resume PDF"
