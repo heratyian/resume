@@ -35,5 +35,5 @@ jobs:
           name: resume
           path: resume.pdf
       
-      - name: Debug: list files
+      - name: list files
         run: ls -l
