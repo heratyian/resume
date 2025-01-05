@@ -1,5 +1,8 @@
 name: Compile LaTeX
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ "main" ]
@@ -36,14 +39,17 @@ jobs:
           name: resume
           path: resume.pdf
       
-      - name: list files
-        run: ls -l
+      - name: Commit PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resume.pdf
+          git commit -m "Auto-commit new resume PDF" || echo "No changes to commit"
 
-      - name: Commit compiled PDF
-        uses: ad-m/github-push-action@v0.6.0
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           force: true
           directory: .
-          message: "Auto-commit new resume PDF"
