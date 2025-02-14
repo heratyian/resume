@@ -1,6 +1,6 @@
 # README
 
-- [resume](/resume.pdf)
+- [resume](/resume.pdf) for [Principal Software Engineer - Ruby on Rails @ Imagine Learning](https://jobs.jobvite.com/imagine-learning/job/owUevfwT)
 
 ## How to run
 
