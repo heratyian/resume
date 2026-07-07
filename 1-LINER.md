@@ -1,0 +1,4 @@
+- Proven founder-engineer who's built and scaled platforms from zero to traction
+- Hands-on technologist with a track record of turning ideas into scalable products.
+- I'm the rare mix of founder, engineer, and operator. I've built real products, led teams, and know exactly how to turn vision into momentum
+- I'm the rare mix of founder, engineer, and operator. I've built real products, led teams, and know what it takes to build technology that wins.
