@@ -1,8 +1,8 @@
 %==========================
-% RESUME
+% GOOGLE FDE / CUSTOMER ENGINEER RESUME
 %==========================
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,9pt]{extarticle}
 
 \pagestyle{empty}
 
@@ -10,10 +10,21 @@
 % PACKAGES AND MARGINS
 %---------------------------
 \usepackage[top=0.5in,bottom=0.5in,left=0.5in,right=0.5in]{geometry}
-\usepackage{parskip}
-\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{needspace}
 \usepackage{setspace}
 \setstretch{1}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{
+  leftmargin=18pt,
+  itemsep=2pt,
+  topsep=3pt,
+  parsep=0pt,
+  partopsep=0pt
+}
 
 %---------------------------
 % CUSTOM COMMANDS
@@ -26,6 +37,15 @@
   \vspace{10pt}
 }
 
+\newcommand{\roleheading}[3]{
+  \Needspace{6\baselineskip}
+  \textbf{#1}
+  \hfill
+  \textit{#2}
+
+  \emph{#3}
+}
+
 \begin{document}
 
 %==========================
@@ -33,13 +53,15 @@
 %==========================
 \begin{center}
 
-{\LARGE\textbf{Ian Heraty}}\\[6pt]
+{\LARGE\textbf{Ian Heraty}}\\[3pt]
 
 {\large
-Software Engineer \quad\textbullet\quad
-Founder \quad\textbullet\quad
-Technical Leader
-}\\[10pt]
+Software Engineer
+\quad\textbullet\quad
+Applied AI Engineer
+\quad\textbullet\quad
+Technical Founder
+}\\[5pt]
 
 \href{mailto:heratyian@gmail.com}{heratyian@gmail.com}
 \quad\textbullet\quad
@@ -58,11 +80,7 @@ Technical Leader
 %==========================
 \resheading{Summary}
 
-Technical leader, founder, and software engineer with more than a decade of experience building scalable software systems, leading cross-functional technical initiatives, and translating emerging technologies into practical business solutions. Over the past five years, my work has focused on bringing AI into production through customer-facing products and intelligent workflow automation.
-
-Experienced building products from zero to production, partnering with engineering organizations across manufacturing, healthcare, financial services, and enterprise software, and helping more than 1,400 professionals develop technical careers. Known for combining deep engineering expertise with clear communication to align customers, engineers, and business stakeholders around complex technical solutions.
-
-Passionate about solving difficult problems at the intersection of software engineering, AI, systems architecture, and product strategy.
+Customer-facing software engineer, founder, and technical leader with 10+ years of experience designing, building, and troubleshooting production systems for enterprise customers. Over the past five years, focused on AI-powered products and workflow automation, including Receipt AI, which has processed 34,000+ receipts representing more than \$40.9M in transactions. Combines hands-on engineering, technical discovery, systems architecture, debugging, and executive communication to move ambiguous AI initiatives from prototype through production and adoption.
 
 %==========================
 % CORE COMPETENCIES
@@ -70,10 +88,10 @@ Passionate about solving difficult problems at the intersection of software engi
 \resheading{Core Competencies}
 
 \begin{itemize}
-\item \textbf{AI \& Product Development}: LLM Applications, OCR, AI Workflows, SaaS Platforms, Product Strategy
-\item \textbf{Architecture}: Distributed Systems, System Design, REST APIs, Cloud Architecture, Solution Design
-\item \textbf{Engineering}: Ruby, Rails, JavaScript, PostgreSQL, Docker, AWS
-\item \textbf{Leadership}: Technical Strategy, Customer Engagement, Mentorship, Cross-functional Collaboration, Technical Communication
+\item \textbf{AI Systems}: LLM Applications, LangChain, OCR, Document Intelligence, AI Workflow Automation, Prompt Engineering
+\item \textbf{Architecture \& Integration}: System Design, REST APIs, Data Pipelines, Enterprise Integrations, Cloud Architecture
+\item \textbf{Engineering}: Python, Ruby, Rails, JavaScript, PostgreSQL, Docker, AWS, Git, CI/CD
+\item \textbf{Customer Delivery}: Technical Discovery, Production Debugging, Solution Delivery, Executive Communication, Cross-functional Leadership
 \end{itemize}
 
 %==========================
@@ -81,91 +99,43 @@ Passionate about solving difficult problems at the intersection of software engi
 %==========================
 \resheading{Professional Experience}
 
-\textbf{Discovery Partners Institute (University of Illinois)}
-\hfill
-\textit{Jan 2023 -- Present}
-
-\emph{Technical Program Lead - Workforce, Chicago, IL}
+\roleheading
+  {Discovery Partners Institute (University of Illinois)}
+  {Jan 2023 -- Present}
+  {Technical Program Lead - Workforce, Chicago, IL}
 
 \begin{itemize}
-
-\item Designed, launched, and continuously evolved an industry-aligned technical training program emphasizing data modeling, APIs, cloud deployment, testing, debugging, systems thinking, and professional engineering practices.
-
-\item Prepared more than 1,400 professionals for careers across software engineering, consulting, product, UX, project management, business analytics, and customer-facing technical roles.
-
-\item Contributed to 80+ direct hires through employer partnerships while generating over \$2.4M in program revenue.
-
-\item Achieved a 95\% employer satisfaction rate, with hiring managers reporting that graduates consistently met or exceeded performance expectations in technical roles.
-
-\item Partnered with engineering organizations including John Deere, SAP, Zebra Technologies, HCSC, Underwriters Laboratories, Oak Street Health, and CIBC to continuously align curriculum with evolving technical hiring needs.
-
+\item Designed, launched, and continuously evolved an industry-aligned technical program emphasizing data modeling, APIs, cloud deployment, testing, debugging, systems thinking, and professional engineering practices.
+\item Partnered with engineering organizations including John Deere, SAP, Zebra Technologies, HCSC, Underwriters Laboratories, Oak Street Health, and CIBC to translate technical workforce needs into practical programs and delivery plans.
+\item Prepared more than 1,400 professionals for technical and customer-facing careers, contributing to 80+ direct hires, more than \$2.4M in program revenue, and 95\% employer satisfaction.
 \end{itemize}
 
-\vspace{10pt}
+\vspace{3pt}
 
-\textbf{Big Green Company}
-\hfill
-\textit{Sep 2020 -- Present}
-
-\emph{Co-Founder | Product \& Technical Lead, Chicago, IL}
+\roleheading
+  {Big Green Company}
+  {Sep 2020 -- Present}
+  {Co-Founder - Product \& Technical Lead, Chicago, IL}
 
 \begin{itemize}
-
-\item Founded and led development of Receipt AI, an AI-powered expense automation platform supporting receipt ingestion through SMS, email, and web interfaces.
-
-\item Designed platform architecture, backend systems, AI document-processing workflows, customer onboarding, and product roadmap from concept through production.
-
-\item Built machine-learning powered document processing pipelines that have analyzed more than 34,000 receipts representing over \$40.9M in financial transactions.
-
-\item Balanced engineering execution, product strategy, customer feedback, and technical operations within a lean startup environment.
-
+\item Founded and led the architecture and implementation of Receipt AI, an AI-powered expense automation platform supporting receipt ingestion through SMS, email, and web interfaces.
+\item Built production document processing pipelines that transform unstructured receipts into structured financial data; processed 34,000+ receipts representing more than \$40.9M in transactions.
+\item Designed backend workflows integrating SMS, email, OCR, and AI services to transform uploaded receipts into structured financial records.
+\item Led customer discovery and translated user feedback and operational constraints into product and architectural improvements while balancing rapid prototyping with reliability and adoption.
 \end{itemize}
 
-\vspace{10pt}
+\vspace{3pt}
 
-\textbf{Nerdery}
-\hfill
-\textit{Mar 2017 -- Sep 2020}
-
-\emph{Senior Software Engineer, Chicago, IL}
+\roleheading
+  {Nerdery}
+  {Mar 2017 -- Sep 2020}
+  {Senior Software Engineer, Chicago, IL}
 
 \begin{itemize}
-
-\item Designed and delivered software solutions for enterprise clients spanning healthcare, manufacturing, logistics, retail, and financial services.
-
-\item Frequently served as the senior technical resource translating complex business requirements into scalable software architectures across multiple technology stacks.
-
-\item Built trusted client relationships through technical leadership, strong communication, and consistent delivery of high-quality software.
-
+\item Led technical discovery with enterprise customers, translating ambiguous business and integration requirements into scalable application architectures and delivery plans.
+\item Designed, built, and troubleshot production systems across APIs, data services, cloud infrastructure, and customer-facing applications in healthcare, manufacturing, logistics, retail, and financial services.
+\item Served as a technical liaison between customer stakeholders and engineering teams, communicating architectural tradeoffs, implementation risks, and business impact.
 \item Achieved the highest billable utilization in the Chicago office during both 2018 and 2019 while maintaining exceptional client satisfaction.
-
-\end{itemize}
-
-%==========================
-% SELECTED TECHNICAL LEADERSHIP
-%==========================
-\resheading{Selected Technical Leadership}
-
-\textbf{Computer Hardware \& Electronics Workshop}
-
-\begin{itemize}
-
-\item Designed and delivered a seven-day immersive workshop covering electronics fundamentals, digital logic, computer hardware, circuit analysis, soldering, and hardware/software integration.
-
-\item Created hands-on laboratory exercises emphasizing first-principles understanding of computing systems from component-level hardware through application software.
-
-\end{itemize}
-
-\vspace{6pt}
-
-\textbf{Receipt AI}
-
-\begin{itemize}
-
-\item Designed and built an AI-powered receipt ingestion and expense automation platform supporting SMS, email, and web-based workflows.
-
-\item Architected document-processing pipelines, OCR workflows, extraction logic, analytics, and customer onboarding experiences.
-
 \end{itemize}
 
 %==========================
@@ -173,10 +143,8 @@ Passionate about solving difficult problems at the intersection of software engi
 %==========================
 \resheading{Education}
 
-\textbf{University of Notre Dame}
+\textbf{University of Notre Dame} --- Bachelor of Arts (BA)
 \hfill
 \textit{2009 -- 2012}
-
-Bachelor of Arts (BA)
 
 \end{document}
